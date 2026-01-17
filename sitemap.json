@@ -1,7 +1,0 @@
-{
-  "desc": "Otto Fridge - Smart fridge tracking for everyone",
-  "rules": [{
-    "action": "allow",
-    "page": "*"
-  }]
-}

@@ -1,223 +1,266 @@
-# Otto Fridge - Smart Fridge Tracking App
+# Fridge by Otto
 
-A thoughtfully designed fridge tracking mini-app built specifically for adults with developmental disabilities. Otto Fridge helps users track what's in their fridge, get expiry reminders, discover recipes based on available ingredients, and reduce food waste.
+**A therapeutic learning tool for adults with developmental disabilities to build independent living skills through fridge management.**
+
+Built on the [Wabi platform](https://wabi.ai) - designed for daily ILS (Independent Living Support) with service coordinators, parents, and care teams.
 
 ## 🎯 Purpose
 
-Otto Fridge addresses a common problem: forgetting what's in your fridge and accidentally buying duplicates or letting food expire. The app provides:
+The fridge is one of the most difficult aspects of independent living for neurodivergent adults. **Fridge by Otto** transforms fridge management into a supportive, game-like learning journey that builds confidence and skills over many months.
 
-- **Visual fridge tracking** - See what's inside your fridge at a glance
-- **Expiry reminders** - Get notified before food goes bad
-- **Recipe suggestions** - Discover what you can make with available ingredients
-- **Simple, accessible interface** - Large buttons, clear icons, minimal text
+### The Real Challenge
+Adults with developmental disabilities face unique barriers:
+- Health issues and dietary restrictions
+- Food uncertainties and scarcity concerns
+- Questions about storage, preparation, and timing
+- A world not designed for neurodivergent needs
 
-## 🌟 Key Features
+### Our Solution
+A **therapeutic tool** that:
+- Makes fridge management feel like a rewarding game
+- Builds understanding gradually through daily use
+- Celebrates progress with levels, stars, and achievements
+- Uses calming lavender design to reduce cognitive stress
+- Focuses ONLY on the fridge visual (no complexity)
+- Supports the journey to self-sustaining practices
 
-### 1. Visual Fridge View
-- Large, clear food icons
-- Color-coded freshness indicators (green = fresh, yellow = expiring soon, red = expired)
-- Visual fridge representation showing items in different sections
-- Quick remove buttons with haptic feedback
+## 🌟 Core Features
 
-### 2. Easy Item Management
-- Browse items by category (Popular, Drinks, Vegetables, Fruits, Meat, Dairy, Other)
-- Search functionality with real-time results
-- One-tap to add items to fridge
-- Automatic expiry date calculation based on food type
+### 1. Visual Fridge Display
+- **Large emoji icons** for every food item (🥛🍞🥚🧀)
+- **Color-coded borders** show freshness at a glance:
+  - 🟢 Green = Fresh and good to eat
+  - 🟡 Yellow = Eat soon (1-2 days left)
+  - 🔴 Red = Expired (time to remove)
+- Simple, calm interface focused on the fridge visual only
 
-### 3. Smart Recipe Suggestions
-- Recipes categorized by:
-  - ✨ Can make now (all ingredients available)
-  - 🔶 Almost there (missing 1-2 ingredients)
-  - 💡 More ideas (partial matches)
-- Step-by-step instructions
-- Ingredient checklist with availability status
-- Difficulty and time estimates
+### 2. Two Simple Actions
+- **Add Food** - Tap + to add items after shopping
+- **Remove Food** - Tap − when you eat or discard items
+- That's it. No complicated menus or settings.
 
-### 4. Accessibility Features
-- **Large touch targets** (minimum 44x44px)
-- **High contrast visuals** with color-coded status
-- **Haptic feedback** on all interactions
-- **Voice announcements** (optional)
-- **Sound effects** (optional)
-- **Reduced motion support** for users who prefer it
-- **Screen reader compatible**
+### 3. Gamification & Growth
+- **Levels 1-10** based on days of consistent use
+- **Star system** - earn stars for every action (add, remove, check-in)
+- **Streak tracking** - celebrate daily use without punishment for missing days
+- **Achievements** unlock as you progress:
+  - "First Item!"
+  - "Week Warrior!" (7 days)
+  - "Waste Reducer!" (caught 5 expired items)
+  - "Fridge Friend!" (30 days)
+  - "Fridge Master!" (90 days)
+
+### 4. Daily Learning
+- **Food Fact of the Day** - simple tips about food storage
+  - "Milk lasts about 1 week in the fridge 🥛"
+  - "Keep raw meat on the bottom shelf 🍗"
+  - "Eggs can last 3 weeks! 🥚"
+- Gentle reminders to check your fridge
+- Success messages: "Great job! You removed the old milk!"
+
+### 5. Accessibility-First Design
+- **Extra-large buttons** (60px minimum) for easy tapping
+- **Heavy lavender color** throughout for calming effect
+- **Simple language** (3rd grade reading level)
+- **No time pressure** - work at your own pace
+- **Positive reinforcement only** - never critical or judgmental
+- **Celebration animations** for every success
 
 ## 🎨 Design Principles
 
-### Color Scheme
-- **Primary:** Lavender (#9B8AC4) - calming, friendly
-- **Background:** Cream (#FFFEF9) - warm, easy on eyes
-- **Surface:** White (#FFFFFF) - clean, clear
-- **Success:** Green (#4CAF50) - fresh items
-- **Warning:** Yellow (#FFC107) - expiring soon
-- **Error:** Red (#F44336) - expired items
+### Therapeutic Color Scheme
+- **Primary: Lavender (#9B8AC4)** - Used HEAVILY throughout (not just accent)
+  - All buttons, headers, progress indicators
+  - Calming, reduces anxiety, promotes focus
+- **Background: Cream (#FFFEF9)** - Warm, gentle on eyes
+- **Soft Lavender (#E6E1F5)** - Secondary elements, cards
+- **Status Colors** (soft, never harsh):
+  - Fresh: Soft Green (#A8D5BA)
+  - Expiring: Gentle Yellow (#FFE4A3)
+  - Expired: Soft Red (#F5B5B5)
 
-### Typography
-- Large, clear fonts (minimum 16px)
-- High contrast text
-- Simple, friendly language
-- Emoji icons for visual recognition
+### Voice & Tone
+Every message is:
+- **Encouraging**, never critical
+- **Patient**, never rushed
+- **Celebrating**, never punishing
+- **Simple** (3rd grade reading level)
+- **Friendly**, like a supportive companion
 
-### Interaction Design
-- One-tap actions wherever possible
-- Clear visual feedback
-- Undo options for safety
-- Confirmation for destructive actions
-- Tutorial mode for first-time users
+Examples:
+- ✅ "You did it! Milk is in your fridge now."
+- ✅ "Way to go! That's 3 days in a row!"
+- ❌ "Don't forget..." (too demanding)
+- ❌ "You missed..." (discouraging)
 
-## 📱 Pages
+### Interaction Philosophy
+- **One tap = one action** (no multi-step flows)
+- **Instant visual feedback** (animations, color changes)
+- **No penalties** (can't fail, only grow)
+- **Gentle guidance** (suggest, never command)
+- **Celebration-focused** (every small win matters)
 
-### Home Page (`/pages/home/`)
-- Display items currently in fridge
-- Quick access scrollable item list with remove buttons
-- Visual fridge representation organized by sections
-- Expiring soon alerts
-- Quick actions to add items or view recipes
+## 📱 App Structure (Intentionally Simple)
 
-### Add Items Page (`/pages/add-items/`)
-- Search bar for finding specific items
-- Categories: Popular, Drinks, Vegetables, Fruits, Meat, Dairy, Other
-- Visual feedback when items are already in fridge
-- Running count of items added
+### Main Screen (Home)
+**Top Bar:**
+- Level badge (e.g., "Level 3 🏆")
+- Star count (e.g., "⭐ 47")
+- Streak tracker (e.g., "🔥 5 days")
 
-### Recipes Page (`/pages/recipes/`)
-- Recipe cards with match percentage
-- Detailed recipe view with:
-  - Ingredients checklist (available/missing)
-  - Step-by-step instructions
-  - Difficulty and time estimates
-- Quick link to add missing ingredients
+**Center (70% of screen):**
+- Visual fridge display
+- All food items shown with emoji icons
+- Color-coded borders indicate freshness
+- Tap any item to see days remaining
 
-### Settings Page (`/pages/settings/`)
-- Notification preferences
-- Expiry reminder days configuration
-- Accessibility options (sound, vibration, voice)
-- Tutorial restart option
-- Data management (clear fridge)
-- App information
+**Bottom Bar:**
+- **[+ Add Food]** button (lavender, 60px tall)
+- **[− Remove Food]** button (lavender, 60px tall)
 
-## 🛠 Technical Architecture
+### Add Food Flow
+1. Tap **[+ Add Food]**
+2. See grid of 20 common food items (large emoji + name)
+3. Tap item → Success animation → "Added to fridge! ⭐"
+4. Auto-return to main screen
 
-### File Structure
-```
-RomeAnthony/
-├── app.js                 # App initialization and global logic
-├── app.json               # App configuration and routing
-├── app.wxss              # Global styles
-├── sitemap.json          # SEO configuration
-├── pages/
-│   ├── home/             # Fridge view page
-│   ├── add-items/        # Item selection page
-│   ├── recipes/          # Recipe suggestions page
-│   └── settings/         # Settings and preferences
-└── utils/
-    ├── foodData.js       # Food item database
-    ├── storage.js        # Storage management utilities
-    ├── recipes.js        # Recipe matching engine
-    └── accessibility.js  # Accessibility helper functions
-```
+### Remove Food Flow
+1. Tap **[− Remove Food]**
+2. See only items currently in your fridge
+3. Tap item → Confirmation → Success animation → "Great job! ⭐"
+4. Auto-return to main screen
 
-### Data Models
+**That's it.** No other pages, menus, or complexity.
 
-#### Food Item
-```javascript
-{
-  id: string,           // Unique identifier
-  name: string,         // Display name
-  icon: string,         // Emoji icon
-  category: string,     // Category (vegetables, fruits, etc.)
-  defaultExpiryDays: number,  // Default shelf life
-  quantity: number,     // Quantity in fridge
-  addedDate: string,    // ISO date when added
-  expiryDate: string    // ISO date when expires
-}
-```
+## 🛠 Platform: Wabi.ai
 
-#### Recipe
-```javascript
-{
-  id: string,
-  name: string,
-  icon: string,
-  difficulty: 'easy' | 'medium' | 'hard',
-  time: string,
-  requiredIngredients: string[],    // IDs of required items
-  optionalIngredients: string[],    // IDs of optional items
-  instructions: string[]
-}
-```
+### What is Wabi?
+Wabi is an AI-powered mini-app platform where you describe what you want in simple prompts, and the AI builds it for you. No coding required.
 
-### Storage
-Uses WeChat mini-program's local storage (`wx.getStorageSync`, `wx.setStorageSync`) for:
-- `fridgeItems`: Array of items currently in fridge
-- `appSettings`: User preferences and settings
+[Learn more about Wabi](https://wabi.ai)
 
-### Key Utilities
+### Building Fridge by Otto on Wabi
 
-#### `storage.js`
-- `getFridgeItems()` - Retrieve all fridge items
-- `addItemToFridge(item)` - Add item (or increment quantity)
-- `removeItemFromFridge(id)` - Remove item (or decrement quantity)
-- `getItemFreshness(expiryDate)` - Calculate freshness status
-- `formatExpiryDate(expiryDate)` - Human-readable expiry text
+**See `WABI_SPECIFICATION.md`** for the complete prompt to paste into Wabi.
 
-#### `recipes.js`
-- `findMatchingRecipes(fridgeItems)` - Find recipes based on available items
-- Returns recipes sorted by match percentage with missing ingredients list
+Key advantages of Wabi for this use case:
+- **Rapid iteration** - Test with users, get feedback, rebuild quickly
+- **No technical barriers** - Service coordinators can help adjust the app
+- **Social sharing** - Easy to share with care teams and other families
+- **Remix culture** - Others can adapt for their specific needs
+- **AI-generated UI** - Automatically handles design based on specifications
 
-#### `accessibility.js`
-- `hapticFeedback(type)` - Provide tactile feedback
-- `showAccessibleToast(options)` - Show messages with multi-modal feedback
-- `showAccessibleConfirm(options)` - Accessible confirmation dialogs
+### Data Storage
+
+Wabi will automatically handle:
+- **Fridge items database** (name, emoji, date added, expiry date, freshness status)
+- **User progress** (level, stars earned, streak days, achievements)
+- **Food item library** (default expiry days for each food type)
+
+### Integration with Otto Parent App
+
+**Fridge by Otto** is a standalone mini-app within the larger Otto ecosystem:
+
+- **Otto** (parent app) - Onboarding, chatbot, directories, FAQ, care team tools
+- **Fridge by Otto** (this app) - Daily ILS fridge management only
+- Future: Other Otto mini-apps for specific ILS skills
+
+The separation keeps each tool focused and non-overwhelming.
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- WeChat Developer Tools or compatible mini-program IDE
-- Basic understanding of WeChat mini-program development
+### For Developers/Builders
 
-### Installation
-1. Clone this repository
-2. Open in WeChat Developer Tools
-3. Set App ID for testing or production
-4. Click "Compile" to build and preview
+1. **Create a Wabi account** at [wabi.ai](https://wabi.ai)
+2. **Copy the prompt** from `WABI_SPECIFICATION.md`
+3. **Paste into Wabi** and let AI build the initial version
+4. **Test with care team** first (not end users yet)
+5. **Iterate based on feedback** - Wabi makes this easy
+6. **Test with 2-3 adults with DD** in supervised setting
+7. **Refine and simplify** based on observations
+8. **Share via Wabi** with service coordinators and families
 
-### Development
-```bash
-# Project structure is ready to go
-# No build process needed for mini-programs
-# Just open in WeChat Developer Tools and start coding
-```
+### For Service Coordinators
 
-## 🎓 Usage Guide
+1. **Access the app** through Wabi social feed or direct share
+2. **Try it yourself** first to understand the flow
+3. **Introduce to user** with supervision
+4. **Support initial use** for first week
+5. **Gradually reduce support** as user builds habit
+6. **Monitor progress** through Otto parent app (if integrated)
+7. **Celebrate milestones** with user
 
-### For Users
+### For Parents/Caregivers
 
-#### Adding Items to Fridge
-1. Tap "Add Items" in the bottom navigation
-2. Browse categories or use search
-3. Tap items to add them
-4. See confirmation with checkmark
-5. Tap "View Fridge" to go back
+1. **Learn the app** together with your adult
+2. **Don't do it for them** - guide, don't control
+3. **Celebrate small wins** - every star earned matters
+4. **Check in weekly** - "Show me your fridge!"
+5. **Trust the learning process** - it takes months, not days
+6. **Share achievements** - show them their growth
 
-#### Removing Items
-1. On home page, scroll through items at top
-2. Tap the X button on any item
-3. Item is removed (or quantity decreases)
+## 🎓 Learning Journey (Over Months)
 
-#### Finding Recipes
-1. Tap "Recipes" in bottom navigation
-2. See recipes you can make now at the top
-3. Tap any recipe for details
-4. Follow step-by-step instructions
+### Month 1: Building Awareness
+**Goal:** Learn what's in the fridge and practice using the app
 
-#### Managing Settings
-1. Tap gear icon on home page
-2. Enable/disable notifications
-3. Adjust reminder days
-4. Toggle accessibility features
-5. Clear fridge if needed
+**Activities:**
+- Open the app daily (even just to look)
+- After shopping, tap **[+ Add Food]** and add new items
+- When you eat something, tap **[− Remove Food]**
+- Watch your stars grow!
+
+**What You're Learning:**
+- What food you have
+- How long food lasts
+- The habit of checking your fridge
+
+**Milestones to Celebrate:**
+- "First Item!" achievement
+- First star earned
+- "Week Warrior!" (7 days in a row)
+
+---
+
+### Month 2: Building Habits
+**Goal:** Make checking the fridge part of your daily routine
+
+**Activities:**
+- Check fridge every morning
+- Notice the color borders (green, yellow, red)
+- Remove yellow/red items before they go bad
+- Read the daily Food Fact
+
+**What You're Learning:**
+- Food doesn't last forever
+- Some foods last longer than others
+- It feels good to keep a fresh fridge
+
+**Milestones to Celebrate:**
+- 14-day streak!
+- Level 2 or 3 reached
+- "Waste Reducer!" achievement
+
+---
+
+### Month 3+: Building Mastery
+**Goal:** Independently manage your fridge with confidence
+
+**Activities:**
+- Before shopping, check what you already have
+- Plan to eat foods that expire soon
+- Keep your fridge organized and fresh
+- Share your progress with family
+
+**What You're Learning:**
+- Self-sufficiency
+- Planning ahead
+- Taking care of your food (and yourself)
+
+**Milestones to Celebrate:**
+- "Fridge Friend!" (30 days)
+- Level 5 reached
+- Consistently keeping fridge fresh
 
 ## ♿️ Accessibility Considerations
 
@@ -245,41 +288,83 @@ Recommended testing protocol:
    - Navigation intuitiveness
    - Feature discoverability
 
-## 🔄 Future Enhancements
+## 🔄 Progressive Learning Phases
 
-### Planned Features
-- [ ] Barcode scanner for quick item addition
-- [ ] Shopping list generation from missing ingredients
-- [ ] Custom item creation
-- [ ] Photo upload for items
-- [ ] Meal planning calendar
-- [ ] Nutritional information
-- [ ] Share recipes with friends
-- [ ] Multi-user households
-- [ ] Cloud sync across devices
-- [ ] Integration with grocery delivery services
+### Phase 1: Core Fridge Tracking (First 3 Months)
+**Current implementation** - Just tracking. Build the habit.
+- Add/remove food items
+- Color-coded freshness
+- Stars and achievements
+- Daily food facts
+- Streak tracking
 
-### Accessibility Improvements
-- [ ] Text-to-speech for all content
-- [ ] Adjustable font sizes
-- [ ] High contrast theme option
-- [ ] Simplified mode with fewer options
-- [ ] Video tutorials
-- [ ] Picture-based communication for non-readers
-- [ ] Caregiver companion app
+**DON'T add complexity until users show consistent Phase 1 mastery.**
+
+---
+
+### Phase 2: Pre-Shopping Check (After 3 Months)
+Add only if user has strong daily habit:
+- Simple reminder: "Before shopping, check your fridge"
+- Expand food library to 30 items
+- "Do you have milk?" yes/no questions
+
+---
+
+### Phase 3: Proactive Suggestions (After 6 Months)
+Add only if user manages Phase 2 confidently:
+- "Your lettuce expires tomorrow"
+- Show items expiring soonest at top
+- Gentle suggestion: "Maybe have a salad today?"
+
+---
+
+### Phase 4: Very Simple Meals (After 9+ Months)
+Add only if user has shown sustained mastery:
+- ASSEMBLY only, no cooking
+  - "Sandwich" = bread + cheese + meat
+  - "Bowl of cereal" = milk + cereal
+- Still no recipes with cooking steps
+- Keep it extremely simple
+
+---
+
+### Future Ecosystem Integration
+- **Care team dashboard** in Otto parent app
+- **Progress sharing** with service coordinator
+- **Milestone notifications** to support network
+- **Data insights** for occupational therapists
+- **Family celebration mode** to share achievements
+
+**Philosophy:** Each phase builds on proven success. Never overwhelm. Celebrate growth.
 
 ## 🤝 Contributing
 
-We welcome contributions, especially those that improve accessibility!
+We welcome contributions, especially those that enhance the therapeutic learning experience!
 
-### Guidelines
-- Maintain large touch targets (44x44px minimum)
-- Test with screen readers
-- Ensure high color contrast (WCAG AA minimum)
-- Provide multiple forms of feedback
-- Keep language simple and clear
-- Add comments explaining complex logic
-- Test on actual devices, not just simulators
+### Core Principles (Non-Negotiable)
+1. **Simplicity over features** - When in doubt, remove complexity
+2. **Positive reinforcement only** - Never critical, never punishing
+3. **Therapeutic color scheme** - Heavy lavender, calming tones
+4. **No time pressure** - Users work at their own pace
+5. **Celebrate small wins** - Every interaction is a success
+6. **Test with actual users** - Adults with DD must validate changes
+
+### Design Guidelines
+- Extra-large touch targets (60px+ minimum, not 44px)
+- Therapeutic lavender as PRIMARY color (not accent)
+- Simple language (3rd grade reading level)
+- Emoji icons for all food items
+- Gentle, encouraging voice
+- No multi-step flows
+- Instant visual feedback
+
+### Testing Protocol
+- Test with service coordinators FIRST
+- Then test with 2-3 adults with DD (supervised)
+- Observe, don't instruct
+- Note confusion points
+- Simplify further based on observations
+- Validate with occupational therapists if possible
 
 ## 📄 License
 
