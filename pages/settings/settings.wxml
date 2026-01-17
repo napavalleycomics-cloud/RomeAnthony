@@ -1,0 +1,136 @@
+<!-- Settings Page -->
+<view class="settings-container">
+  <view class="header">
+    <text class="heading-large">Settings</text>
+  </view>
+
+  <scroll-view scroll-y="true" class="settings-scroll">
+    <!-- App Info -->
+    <view class="settings-section">
+      <view class="app-logo">
+        <text class="logo-icon">🍽️</text>
+        <text class="logo-text">Otto Fridge</text>
+        <text class="logo-version">v1.0.0</text>
+      </view>
+    </view>
+
+    <!-- Notifications -->
+    <view class="settings-section">
+      <text class="section-title">Notifications</text>
+      <view class="setting-item">
+        <view class="setting-info">
+          <text class="setting-label">Expiry Reminders</text>
+          <text class="setting-description">Get notified about expiring items</text>
+        </view>
+        <switch
+          checked="{{settings.notifications}}"
+          bindchange="onNotificationsChange"
+          color="#9B8AC4"
+        />
+      </view>
+      <view class="setting-item" wx:if="{{settings.notifications}}">
+        <view class="setting-info">
+          <text class="setting-label">Reminder Days</text>
+          <text class="setting-description">Days before expiry to remind</text>
+        </view>
+        <picker
+          mode="selector"
+          range="{{reminderDaysOptions}}"
+          value="{{reminderDaysIndex}}"
+          bindchange="onReminderDaysChange"
+        >
+          <view class="picker-value">{{settings.expiryReminderDays}} days</view>
+        </picker>
+      </view>
+    </view>
+
+    <!-- Feedback -->
+    <view class="settings-section">
+      <text class="section-title">Feedback</text>
+      <view class="setting-item">
+        <view class="setting-info">
+          <text class="setting-label">Sound Effects</text>
+          <text class="setting-description">Play sounds for actions</text>
+        </view>
+        <switch
+          checked="{{settings.soundFeedback}}"
+          bindchange="onSoundChange"
+          color="#9B8AC4"
+        />
+      </view>
+      <view class="setting-item">
+        <view class="setting-info">
+          <text class="setting-label">Vibration</text>
+          <text class="setting-description">Vibrate on button taps</text>
+        </view>
+        <switch
+          checked="{{settings.vibrationFeedback}}"
+          bindchange="onVibrationChange"
+          color="#9B8AC4"
+        />
+      </view>
+      <view class="setting-item">
+        <view class="setting-info">
+          <text class="setting-label">Voice Announcements</text>
+          <text class="setting-description">Read actions aloud</text>
+        </view>
+        <switch
+          checked="{{settings.voiceAnnouncements}}"
+          bindchange="onVoiceChange"
+          color="#9B8AC4"
+        />
+      </view>
+    </view>
+
+    <!-- Tutorial -->
+    <view class="settings-section">
+      <text class="section-title">Help</text>
+      <view class="setting-item clickable" bindtap="onRestartTutorial">
+        <view class="setting-info">
+          <text class="setting-label">Restart Tutorial</text>
+          <text class="setting-description">See the app guide again</text>
+        </view>
+        <text class="setting-arrow">→</text>
+      </view>
+    </view>
+
+    <!-- Data -->
+    <view class="settings-section">
+      <text class="section-title">Data</text>
+      <view class="setting-item">
+        <view class="setting-info">
+          <text class="setting-label">Items in Fridge</text>
+          <text class="setting-description">Total items stored</text>
+        </view>
+        <text class="setting-value">{{itemCount}}</text>
+      </view>
+      <view class="setting-item clickable danger" bindtap="onClearFridge">
+        <view class="setting-info">
+          <text class="setting-label danger-text">Clear Fridge</text>
+          <text class="setting-description">Remove all items</text>
+        </view>
+        <text class="setting-arrow">→</text>
+      </view>
+    </view>
+
+    <!-- About -->
+    <view class="settings-section">
+      <text class="section-title">About</text>
+      <view class="about-content">
+        <text class="about-text">
+          Otto Fridge helps you track what's in your fridge,
+          reduce food waste, and discover recipes based on
+          available ingredients.
+        </text>
+        <text class="about-text">
+          Designed specifically for adults with developmental
+          disabilities, featuring large buttons, clear icons,
+          and simple navigation.
+        </text>
+        <text class="about-text">
+          Made with ❤️ by Otto
+        </text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

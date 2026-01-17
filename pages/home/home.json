@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Otto Fridge",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#FFFEF9",
+  "backgroundTextStyle": "dark"
+}
