@@ -37,7 +37,21 @@ def get_gmail_service():
                 )
             flow = InstalledAppFlow.from_client_secrets_file(
                 'credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
+
+            # Manual OAuth flow for headless environment
+            auth_url, _ = flow.authorization_url(prompt='consent')
+
+            print("\n" + "="*80)
+            print("Please visit this URL to authorize this application:")
+            print("\n" + auth_url + "\n")
+            print("="*80)
+            print("\nAfter authorization, you'll be redirected to a URL.")
+            print("Copy the FULL redirect URL and paste it here.\n")
+
+            redirect_response = input('Paste the full redirect URL here: ').strip()
+
+            flow.fetch_token(authorization_response=redirect_response)
+            creds = flow.credentials
 
         # Save the credentials for the next run
         with open('token.json', 'wb') as token:
